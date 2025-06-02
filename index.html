@@ -5,29 +5,15 @@
     <meta charset="utf-8">
     <title>Monitoring Suhu dan Kelembaban</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -47,12 +33,6 @@
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>Monitoring</h3>
                 </a>
-                <div class="d-flex align-items-center ms-4 mb-4">
-                    <div class="position-relative">
-                        <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                        <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
-                    </div>
-                </div>
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                 </div>
@@ -62,61 +42,58 @@
 
         <!-- Content Start -->
         <div class="content">
-            <!-- Sales Chart Start -->
+            <!-- Charts Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light text-center rounded p-4">
+                    <div class="col-12 col-md-6">
+                        <div class="bg-light text-center rounded p-4 mb-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Monitoring Humidity</h6>
                             </div>
-                            <div class="ratio ratio-4x3">
-                                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humidity&type=line&yaxis=100"></iframe>
+                            <div class="ratio ratio-16x9">
+                                <iframe class="w-100 h-100" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humidity&type=line&yaxis=100"></iframe>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light text-center rounded p-4">
+                    <div class="col-12 col-md-6">
+                        <div class="bg-light text-center rounded p-4 mb-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Monitoring Temperature</h6>
                             </div>
-                            <div class="ratio ratio-4x3">
-                                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature&type=line&yaxis=100"></iframe>
+                            <div class="ratio ratio-16x9">
+                                <iframe class="w-100 h-100" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature&type=line&yaxis=100"></iframe>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light text-center rounded p-4">
+                    <div class="col-12 col-md-6">
+                        <div class="bg-light text-center rounded p-4 mb-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Widget Humidity</h6>
                             </div>
-                            <div class="ratio ratio-4x3">
-                                <iframe style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/widgets/1086527"></iframe>
+                            <div class="ratio ratio-16x9">
+                                <iframe class="w-100 h-100" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/widgets/1086527"></iframe>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-light text-center rounded p-4">
+                    <div class="col-12 col-md-6">
+                        <div class="bg-light text-center rounded p-4 mb-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Widget Temperature</h6>
                             </div>
-                            <div class="ratio ratio-4x3">
-                                <iframe style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/widgets/1086526" allowfullscreen></iframe>
+                            <div class="ratio ratio-16x9">
+                                <iframe class="w-100 h-100" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/widgets/1086526" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Sales Chart End -->
+            <!-- Charts End -->
 
             <!-- Widgets Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-light rounded p-4">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-light rounded p-4 mb-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Calendar</h6>
                             </div>
@@ -124,8 +101,8 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-xl-4">
-                        <div class="h-100 bg-light rounded p-4">
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="h-100 bg-light rounded p-4 mb-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Download Data</h6>
                             </div>
@@ -154,8 +131,6 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
