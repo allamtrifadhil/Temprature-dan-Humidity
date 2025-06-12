@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Monitoring Suhu dan Kelembaban</title>
@@ -14,63 +15,19 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <style>
-        .widget-container {
-            background-color: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            padding: 10px;
-            width: 280px;
-            height: 280px;
-        }
-
-        .widget-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            display: block;
-            margin: auto;
-        }
-        <style>
-    .widget-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .widget-container {
-        width: 150%;
-        max-width: 250px;
-        aspect-ratio: 1 / 1;
-        background-color: #ffffff;
-        border-radius: 12px;
-        display: flex;
-        justify-content: left;
-        align-items: left;
-        padding: 0;
-        margin: auto;
-    }
-
-    .widget-container iframe {
-        width: 150%;
-        height: 150%;
-        border: none;
-        display: block;
-        margin: auto;
-    }
-    </style>
 </head>
+
 <body>
     <div class="container-xxl position-relative bg-white d-flex p-0">
-        <!-- Spinner -->
+        <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
+        <!-- Spinner End -->
 
-        <!-- Sidebar -->
+        <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-light navbar-light">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
@@ -81,64 +38,58 @@
                 </div>
             </nav>
         </div>
+        <!-- Sidebar End -->
 
-        <!-- Content -->
+        <!-- Content Start -->
         <div class="content">
-            <!-- Charts -->
+            <!-- Charts Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                    <!-- Humidity Chart -->
                     <div class="col-12 col-md-6">
                         <div class="bg-light text-center rounded p-4 mb-4">
-                            <h6 class="mb-3">Monitoring Humidity</h6>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Monitoring Humidity</h6>
+                            </div>
                             <div class="ratio ratio-16x9">
-                                <iframe class="w-100 h-100"
-                                    src="https://thingspeak.com/channels/2977607/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humidity&type=line&yaxis=100">
-                                </iframe>
+                                <iframe class="w-100 h-100" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Humidity&type=line&yaxis=100"></iframe>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Temperature Chart -->
                     <div class="col-12 col-md-6">
                         <div class="bg-light text-center rounded p-4 mb-4">
-                            <h6 class="mb-3">Monitoring Temperature</h6>
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Monitoring Temperature</h6>
+                            </div>
                             <div class="ratio ratio-16x9">
-                                <iframe class="w-100 h-100"
-                                    src="https://thingspeak.com/channels/2977607/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature&type=line&yaxis=100">
-                                </iframe>
+                                <iframe class="w-100 h-100" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Temperature&type=line&yaxis=100"></iframe>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Widget Humidity -->
-                   <div class="col-12 col-md-6">
-                        <div class="bg-light text-center rounded p-4 mb-4">
-                            <h6 class="mb-3">Widget Humidity</h6>
-                            <div class="widget-wrapper">
-                                <div class="widget-container">
-                                    <iframe src="https://thingspeak.com/channels/2977607/widgets/1086527"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Widget Temperature -->
                     <div class="col-12 col-md-6">
-    <div class="bg-light text-center rounded p-4 mb-4">
-        <h6 class="mb-3">Widget Temperature</h6>
-        <div class="widget-wrapper">
-            <div class="widget-container">
-                <iframe src="https://thingspeak.com/channels/2977607/widgets/1086526"></iframe>
-            </div>
-        </div>
-    </div>
-</div>
+                        <div class="bg-light text-center rounded p-4 mb-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Widget Humidity</h6>
+                            </div>
+                            <div class="ratio ratio-16x9">
+                                <iframe class="w-100 h-100" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/widgets/1086527"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="bg-light text-center rounded p-4 mb-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <h6 class="mb-0">Widget Temperature</h6>
+                            </div>
+                            <div class="ratio ratio-16x9">
+                                <iframe class="w-100 h-100" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2977607/widgets/1086526" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- Charts End -->
 
-            <!-- Calendar & Download -->
+            <!-- Widgets Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-12 col-md-6 col-xl-4">
@@ -149,6 +100,7 @@
                             <div id="calender"></div>
                         </div>
                     </div>
+
                     <div class="col-12 col-md-6 col-xl-4">
                         <div class="h-100 bg-light rounded p-4 mb-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
@@ -161,10 +113,12 @@
                     </div>
                 </div>
             </div>
+            <!-- Widgets End -->
 
             <!-- Back to Top -->
             <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
         </div>
+        <!-- Content End -->
     </div>
 
     <!-- JavaScript Libraries -->
@@ -179,4 +133,5 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
