@@ -13,7 +13,6 @@
     z-index: 99;
 }
 
-
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -27,7 +26,6 @@
     visibility: visible;
     opacity: 1;
 }
-
 
 /*** Button ***/
 .btn {
@@ -63,7 +61,6 @@
     font-weight: normal;
     border-radius: 50px;
 }
-
 
 /*** Layout ***/
 .sidebar {
@@ -119,7 +116,6 @@
         margin-left: 0;
     }
 }
-
 
 /*** Navbar ***/
 .sidebar .navbar .navbar-nav .nav-link {
@@ -216,7 +212,6 @@
     }
 }
 
-
 /*** Date Picker ***/
 .bootstrap-datetimepicker-widget.bottom {
     top: auto !important;
@@ -244,15 +239,12 @@
     border-bottom-color: var(--primary);
 }
 
-
 /*** Testimonial ***/
 .progress .progress-bar {
     width: 0px;
     transition: 2s;
 }
 
-
-/*** Testimonial ***/
 .testimonial-carousel .owl-dots {
     margin-top: 24px;
     display: flex;
@@ -274,4 +266,53 @@
 .testimonial-carousel .owl-dot.active {
     background: var(--dark);
     border-color: var(--primary);
+}
+
+/*** Tambahan Responsive CSS ***/
+iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bg-light.text-center.rounded.p-4.mb-4 {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none !important;
+    }
+
+    .content {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .container-fluid.pt-4.px-4 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .col-12.col-md-6,
+    .col-12.col-md-6.col-xl-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    h6.mb-0 {
+        font-size: 1rem;
+    }
+
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
 }
