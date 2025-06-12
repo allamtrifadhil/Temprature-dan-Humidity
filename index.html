@@ -32,6 +32,33 @@
             display: block;
             margin: auto;
         }
+        <style>
+     .widget-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .widget-container {
+        width: 100%;
+        max-width: 250px;
+        aspect-ratio: 1 / 1;
+        background-color: #ffffff;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: auto;
+    }
+
+    .widget-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+        margin: auto;
+    }
     </style>
 </head>
 <body>
@@ -85,10 +112,10 @@
                     </div>
 
                     <!-- Widget Humidity -->
-                    <div class="col-12 col-md-6">
+                   <div class="col-12 col-md-6">
                         <div class="bg-light text-center rounded p-4 mb-4">
                             <h6 class="mb-3">Widget Humidity</h6>
-                            <div class="d-flex justify-content-center">
+                            <div class="widget-wrapper">
                                 <div class="widget-container">
                                     <iframe src="https://thingspeak.com/channels/2977607/widgets/1086527"></iframe>
                                 </div>
@@ -96,17 +123,18 @@
                         </div>
                     </div>
 
+
                     <!-- Widget Temperature -->
                     <div class="col-12 col-md-6">
-                        <div class="bg-light text-center rounded p-4 mb-4">
-                            <h6 class="mb-3">Widget Temperature</h6>
-                            <div class="d-flex justify-content-center">
-                                <div class="widget-container">
-                                    <iframe src="https://thingspeak.com/channels/2977607/widgets/1086526"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="bg-light text-center rounded p-4 mb-4">
+        <h6 class="mb-3">Widget Temperature</h6>
+        <div class="widget-wrapper">
+            <div class="widget-container">
+                <iframe src="https://thingspeak.com/channels/2977607/widgets/1086526"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
                 </div>
             </div>
 
